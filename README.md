@@ -34,7 +34,7 @@ java -jar lanchonete-api-0.0.1-SNAPSHOT.jar
 
 ## Post Request /pedidos
 
-A requisição post [/pedidos](http://localhost:8080/api/pedidos) realiza o cadastro do pedido no sistema.<br>
+A requisição post /pedidos realiza o cadastro do pedido no sistema.<br>
 JSON presente no body da requisição:
 
 ```
@@ -69,7 +69,7 @@ JSON presente no body da requisição:
 
 ## Get Request /pedidos
 
-A requisição get [/pedidos](http://localhost:8080/api/pedidos) recupera todas os pedidos já cadastrados no sistema. Por default já vem um pedido cadastrado.<br>
+A requisição get /pedidos recupera todas os pedidos já cadastrados no sistema. Por default já vem um pedido cadastrado.<br>
 Resposta dá requisição no formato JSON:
 
 ```
@@ -120,7 +120,7 @@ Resposta dá requisição no formato JSON:
 
 ## Get Request/lanches
 
-A requisição get /pedidos [/pedidos](http://localhost:8080/api/pedidos) recupera todas os lanches já pré cadastrados no sistema.<br>
+A requisição get /lanches recupera todas os lanches já pré cadastrados no sistema.<br>
 Resposta dá requisição no formato JSON:
 
 ```
