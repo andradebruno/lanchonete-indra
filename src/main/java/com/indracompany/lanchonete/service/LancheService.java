@@ -65,10 +65,10 @@ public class LancheService {
 
 		BigDecimal itemCost = BigDecimal.ZERO;
 		BigDecimal total = BigDecimal.ZERO;
+		Integer quantidadePromocao = 0;
 		boolean ativoPromocao = false;
 		boolean temAlface = false;
 		boolean temBacon = false;
-
 
 		for (Ingredientes ingredientes : ingredientesLista) {
 
@@ -80,14 +80,15 @@ public class LancheService {
 				temBacon = true;
 			}
 
-
 			if ((ingredientes.getIdIngrediente() == 3 || ingredientes.getIdIngrediente() == 5) && ativoPromocao == false
 					&& (ingredientes.getQuantidadeIngrediente() % 3 == 0)) {
-				ingredientes.setQuantidadeIngrediente((ingredientes.getQuantidadeIngrediente() / 3) * 2);
+				quantidadePromocao = ((ingredientes.getQuantidadeIngrediente() / 3) * 2);
+				itemCost = (ingredientes.getPrecoIngrediente().multiply(new BigDecimal(quantidadePromocao)));
 				ativoPromocao = true;
 			}
-
-			itemCost = (ingredientes.getPrecoIngrediente().multiply(new BigDecimal(ingredientes.getQuantidadeIngrediente())));
+			else {
+				itemCost = (ingredientes.getPrecoIngrediente().multiply(new BigDecimal(ingredientes.getQuantidadeIngrediente())));
+			}
 			total = total.add(itemCost);
 
 		}
@@ -99,7 +100,6 @@ public class LancheService {
 			total = total.subtract(total.multiply(new BigDecimal(10)).divide(new BigDecimal(100)));
 		}
 
-		System.out.println("Total em baixo: " + total);
 		return total;
 	}
 

@@ -1,0 +1,2 @@
+Esse projeto foi desenvolvido utilizando Java 8, Maven e [Spring Boot 2.0.0](https://projects.spring.io/spring-boot/). 
+Para sua configuração inicial foi utilizado o [Spring Initializr](https://start.spring.io/), utilizando as dependências Web, Actuator e DevTools presentes no Initializr
