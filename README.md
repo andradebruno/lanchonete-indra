@@ -16,13 +16,13 @@ git clone git@gitlab.com:andradebruno/lanchonete-indra.git
 
 ## Lista de possíveis requisições.
 
-- [Requisição Post]
-	- [/pedidos](#post-Pedidos)
+* Requisição Post
+	- [Requisição Post /pedidos](#post-Pedidos)
 	- [/lanche/calcula](#post-Lanche-Calcula)
-- [Requisição Get]
+* Requisição Get
 	- [/pedidos](#get-Pedidos)
 	- [/lanches](#get-Lanches)
-	- [/lanche/{idLanche}](#get-Lanches-Id)
+	- [Requisição get /lanche/{idLanche}](#get-Lanches-Id)
 
 
 
@@ -57,7 +57,6 @@ JSON presente no body da requisição:
 		"carne":		1,
 		"ovo":			0,
 		"queijo":		1,
-		"total":		6.5
     }
 ```
 
@@ -267,7 +266,7 @@ Resposta dá requisição no formato JSON:
 ]
 ```
 
-## Requjsição get /lanche/{idLanche}
+## Requisição get /lanche/{idLanche}
 
 A requisição /lanche/{idLanche} recupera a lista de ingredientes de um dos lanche já pré cadastrados no sistema, utilizando seu ID como forma de pesquisa.<br>
 
