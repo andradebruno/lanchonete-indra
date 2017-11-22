@@ -11,22 +11,28 @@ Ou utilizar o comando para clonar o projeto através do git
 git clone git@gitlab.com:andradebruno/lanchonete-indra.git
 ```
 
+Após copiar o código, abra no Eclipse e selecione a classe LanchoneteApplication.java no pacote com.indracompany.lanchonete e rode como Java Application. Também é possível fazer o download do jar e utilizar o CMD/Terminal para rodar através do comando:
+
+```
+java -jar lanchonete-api-0.0.1-SNAPSHOT.jar
+```
+
 ## Link para requisições no WebService
 - [Api Lanchonete](http://localhost:8080/api/)
 
 ## Lista de possíveis requisições.
 
 * Requisição Post
-	- [Requisição Post /pedidos](#post-Pedidos)
-	- [/lanche/calcula](#post-Lanche-Calcula)
+	- [Post Request /pedidos](#post-request-pedidos)
+	- [Post Request /lanche/calcula](#post-request-lanche-calcula)
 * Requisição Get
-	- [/pedidos](#get-Pedidos)
-	- [/lanches](#get-Lanches)
-	- [Requisição get /lanche/{idLanche}](#get-Lanches-Id)
+	- [Get Request /pedidos](#get-request-pedidos)
+	- [Get Request/lanches](#get-request-lanches)
+	- [Get Request /lanche/{idLanche}](#get-request-lanche-idlanche)
 
 
 
-## Requisição Post /pedidos
+## Post Request /pedidos
 
 A requisição post [/pedidos](http://localhost:8080/api/pedidos) realiza o cadastro do pedido no sistema.<br>
 JSON presente no body da requisição:
@@ -43,7 +49,7 @@ JSON presente no body da requisição:
     }
 ```
 
-## Requisição Post /lanche/calcula
+## Post Request /lanche/calcula
 
 A requisição post /lanche/calcula utiliza as informações presente no formulário de cadastro de pedido para que seja calculado o valor do pedido, a mesma é acionada utilizando o botão de calcular.<br>
 
@@ -61,7 +67,7 @@ JSON presente no body da requisição:
 ```
 
 
-## Requisição Get /pedidos
+## Get Request /pedidos
 
 A requisição get [/pedidos](http://localhost:8080/api/pedidos) recupera todas os pedidos já cadastrados no sistema. Por default já vem um pedido cadastrado.<br>
 Resposta dá requisição no formato JSON:
@@ -112,7 +118,7 @@ Resposta dá requisição no formato JSON:
 ```
 
 
-## Requisição Get /lanches
+## Get Request/lanches
 
 A requisição get /pedidos [/pedidos](http://localhost:8080/api/pedidos) recupera todas os lanches já pré cadastrados no sistema.<br>
 Resposta dá requisição no formato JSON:
@@ -266,7 +272,7 @@ Resposta dá requisição no formato JSON:
 ]
 ```
 
-## Requisição get /lanche/{idLanche}
+## Get Request /lanche/{idLanche}
 
 A requisição /lanche/{idLanche} recupera a lista de ingredientes de um dos lanche já pré cadastrados no sistema, utilizando seu ID como forma de pesquisa.<br>
 
