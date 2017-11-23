@@ -4,11 +4,11 @@ Para sua configuração inicial foi utilizado o [Spring Initializr](https://star
 
 ## Instruções para rodar o WebService
 
-Para poder rodar o WebService basta copiar o código utilizando o [Link](https://gitlab.com/andradebruno/lanchonete-indra/repository/master/archive.zip).
+Para poder rodar o WebService basta copiar o código utilizando o [Link](https://github.com/andradebruno/lanchonete-indra/archive/master.zip).
 
 Ou utilizar o comando abaixo para clonar o projeto do git
 ```
-git clone git@gitlab.com:andradebruno/lanchonete-indra.git
+git clone git@github.com:andradebruno/lanchonete-indra.git
 ```
 
 Após copiar o código, abra no Eclipse e selecione a classe LanchoneteApplication.java no pacote com.indracompany.lanchonete e rode como Java Application. Também é possível fazer o [download](https://gitlab.com/andradebruno/lanchonete-indra/raw/master/lanchonete-api-0.0.1-SNAPSHOT.jar) do jar e utilizar o CMD/Terminal para rodar através do comando:
