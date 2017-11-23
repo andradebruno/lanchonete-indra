@@ -6,19 +6,19 @@ Para sua configuração inicial foi utilizado o [Spring Initializr](https://star
 
 Para poder rodar o WebService basta copiar o código utilizando o [Link](https://gitlab.com/andradebruno/lanchonete-indra/repository/master/archive.zip).
 
-Ou utilizar o comando para clonar o projeto através do git
+Ou utilizar o comando abaixo para clonar o projeto do git
 ```
 git clone git@gitlab.com:andradebruno/lanchonete-indra.git
 ```
 
-Após copiar o código, abra no Eclipse e selecione a classe LanchoneteApplication.java no pacote com.indracompany.lanchonete e rode como Java Application. Também é possível fazer o download do jar e utilizar o CMD/Terminal para rodar através do comando:
+Após copiar o código, abra no Eclipse e selecione a classe LanchoneteApplication.java no pacote com.indracompany.lanchonete e rode como Java Application. Também é possível fazer o [download](https://gitlab.com/andradebruno/lanchonete-indra/raw/master/lanchonete-api-0.0.1-SNAPSHOT.jar) do jar e utilizar o CMD/Terminal para rodar através do comando:
 
 ```
 java -jar lanchonete-api-0.0.1-SNAPSHOT.jar
 ```
 
 ## Link para requisições no WebService
-- [Api Lanchonete](http://localhost:8080/api/)
+- [Api Lanchonete http://localhost:8080/api/](http://localhost:8080/api/)
 
 ## Lista de possíveis requisições.
 
@@ -27,7 +27,7 @@ java -jar lanchonete-api-0.0.1-SNAPSHOT.jar
 	- [Post Request /lanche/calcula](#post-request-lanche-calcula)
 * Requisição Get
 	- [Get Request /pedidos](#get-request-pedidos)
-	- [Get Request/lanches](#get-request-lanches)
+	- [Get Request /lanches](#get-request-lanches)
 	- [Get Request /lanche/{idLanche}](#get-request-lanche-idlanche)
 
 
@@ -118,7 +118,7 @@ Resposta dá requisição no formato JSON:
 ```
 
 
-## Get Request/lanches
+## Get Request /lanches
 
 A requisição get /lanches recupera todas os lanches já pré cadastrados no sistema.<br>
 Resposta dá requisição no formato JSON:
